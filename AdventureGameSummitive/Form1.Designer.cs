@@ -42,6 +42,7 @@
             this.option1Button.FlatAppearance.BorderSize = 0;
             this.option1Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.option1Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.option1Button.ForeColor = System.Drawing.Color.White;
             this.option1Button.Location = new System.Drawing.Point(12, 357);
             this.option1Button.Name = "option1Button";
             this.option1Button.Size = new System.Drawing.Size(488, 23);
@@ -54,6 +55,7 @@
             this.option2Button.FlatAppearance.BorderSize = 0;
             this.option2Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.option2Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.option2Button.ForeColor = System.Drawing.Color.White;
             this.option2Button.Location = new System.Drawing.Point(12, 386);
             this.option2Button.Name = "option2Button";
             this.option2Button.Size = new System.Drawing.Size(488, 23);
@@ -66,6 +68,7 @@
             this.option3Button.FlatAppearance.BorderSize = 0;
             this.option3Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.option3Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.option3Button.ForeColor = System.Drawing.Color.White;
             this.option3Button.Location = new System.Drawing.Point(12, 415);
             this.option3Button.Name = "option3Button";
             this.option3Button.Size = new System.Drawing.Size(488, 23);
@@ -88,6 +91,7 @@
             // 
             // outputLabel
             // 
+            this.outputLabel.ForeColor = System.Drawing.Color.White;
             this.outputLabel.Location = new System.Drawing.Point(9, 9);
             this.outputLabel.Name = "outputLabel";
             this.outputLabel.Size = new System.Drawing.Size(491, 63);
@@ -98,14 +102,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(512, 450);
             this.Controls.Add(this.outputLabel);
             this.Controls.Add(this.pictureOutput);
             this.Controls.Add(this.option3Button);
             this.Controls.Add(this.option2Button);
             this.Controls.Add(this.option1Button);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Adventure Game";
             ((System.ComponentModel.ISupportInitialize)(this.pictureOutput)).EndInit();
             this.ResumeLayout(false);
 
