@@ -69,7 +69,7 @@ namespace AdventureGameSummitive
             else if (page == 6)
                 page = 17;
             else if (page == 7)
-                page = 7;
+                page = 10;
             else if (page == 8)
                 page = 16;
             else if (page == 9)
