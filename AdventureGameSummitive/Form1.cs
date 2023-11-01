@@ -31,8 +31,10 @@ namespace AdventureGameSummitive
 
         private void option1Button_Click(object sender, EventArgs e)
         {
+        Reset1:
             if (option1Button.Text == "Start")
             {
+                page = -1;
             }
             else if (page == -1)
             {
@@ -50,33 +52,44 @@ namespace AdventureGameSummitive
                 Refresh();
                 Thread.Sleep(1000);
                 page = 35;
-
             }
             else if (page == 3 && r <= 6)
                 page = 8;
             else if (page == 3 && r >= 7)
+            {
                 page = 5;
+                if (page == page) goto Reset1;
+            }
             else if (page == 4)
+            {
                 page = 9;
+                if (page == page) goto Reset1;
+            }
             else if (page == 5)
             {
                 outputLabel.Text = "The torch shines bright the area seems to purify you get out safely";
                 pictureOutput.Image = Properties.Resources.Shadowfell2;
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(3000);
                 page = 36;
             }
             else if (page == 6)
+            {
                 page = 17;
+                if (page == page) goto Reset1;
+            }
             else if (page == 7)
+            {
                 page = 10;
+                if (page == page) goto Reset1;
+            }
             else if (page == 8)
                 page = 16;
             else if (page == 9)
             {
                 outputLabel.Text = "The murky water seems to draw you in and pulls you under the water and you drown";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(3000);
                 page = 35;
             }
             else if (page == 10)
@@ -87,20 +100,23 @@ namespace AdventureGameSummitive
                 page = 35;
             }
             else if (page == 11)
+            {
                 page = 18;
+                if (page == page) goto Reset1;
+            }
             else if (page == 12)
             {
                 outputLabel.Text = "You jump up but because of the weaker gravity you go to high and a dragon eats you";
                 pictureOutput.Image = Properties.Resources.shadowfelldragon1;
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(3000);
                 page = 35;
             }
             else if (page == 13)
             {
                 outputLabel.Text = "You get plenty of food this place isn't so bad you start a new life here";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(3000);
                 page = 36;
             }
             else if (page == 14)
@@ -132,7 +148,7 @@ namespace AdventureGameSummitive
             {
                 outputLabel.Text = "You go back and your torch light grows again but you become trapped here";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(3000);
                 page = 35;
             }
             else if (page == 20)
@@ -253,14 +269,17 @@ namespace AdventureGameSummitive
 
         private void option2Button_Click(object sender, EventArgs e)
         {
-            
+        Reset2:
             if (page == -1)
             {
                 keenmind++;
                 page = 0;
             }
             else if (page == 0)
+            {
                 page = 2;
+                if (page == page) goto Reset2;
+            }
             else if (page == 1)
                 page = 7;
             else if (page == 2)
@@ -278,20 +297,26 @@ namespace AdventureGameSummitive
             {
                 outputLabel.Text = "The torch shines bright the area seems to purify you get out safely";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(3000);
                 page = 36;
             }
             else if (page == 6)
+            {
                 page = 14;
+                if (page == page) goto Reset2;
+            }
             else if (page == 7)
                 page = 15;
             else if (page == 8)
+            {
                 page = 12;
+                if (page == page) goto Reset2;
+            }
             else if (page == 9)
             {
                 outputLabel.Text = "The murky water seems to draw you in and pulls you under the water and you drown";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(3000);
                 page = 35;
             }
             else if (page == 10)
@@ -308,7 +333,7 @@ namespace AdventureGameSummitive
                 outputLabel.Text = "You jump up but because of the weaker gravity you go to high and a dragon eats you";
                 pictureOutput.Image = Properties.Resources.shadowfelldragon1;
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(3000);
                 page = 35;
             }
             else if (page == 13)
@@ -328,12 +353,15 @@ namespace AdventureGameSummitive
             else if (page == 15)
                 page = 7;
             else if (page == 16)
+            {
                 page = 19;
+                if (page == page) goto Reset2;
+            }
             else if (page == 17)
             {
                 outputLabel.Text = "You are a murderer you got out but were sentenced to life in prison";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(3000);
                 page = 35;
             }
             else if (page == 18)
@@ -347,7 +375,7 @@ namespace AdventureGameSummitive
             {
                 outputLabel.Text = "You go back and your torch light grows again but you become trapped here";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(3000);
                 page = 35;
             }
             else if (page == 20)
@@ -484,7 +512,7 @@ namespace AdventureGameSummitive
             {
                 outputLabel.Text = "You kill the dragon";
                 Refresh();
-                Thread.Sleep(1500);
+                Thread.Sleep(1000);
                 page = 11;
             }
             else if (page == 7)
@@ -495,7 +523,7 @@ namespace AdventureGameSummitive
             {
                 outputLabel.Text = "You get plenty of food this place isn't so bad you start a new life here";
                 Refresh();
-                Thread.Sleep(1500);
+                Thread.Sleep(3000);
                 page = 36;
             }
             else if (page == 6)
